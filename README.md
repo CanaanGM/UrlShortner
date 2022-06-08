@@ -5,8 +5,8 @@
 ```mermaid
 graph LR
 req((req)) --> exists{exists}
-exists -- yes --> response((response))
-exists -- no --> shorten[shorten] --> db((db))  
+exists -- yes, return key--> response((SlmopEV))
+exists -- no, create --> shorten["shorten { SlmopEV:https://google.com }"] --> db((db))  
 ```
 
 ## Routes:
