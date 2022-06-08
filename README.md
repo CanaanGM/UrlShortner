@@ -4,10 +4,9 @@
 
 ```mermaid
 graph LR
-Url[Square Rect] -- create_key {Key:Url} --> Db((Circle))
-Url --> Shorten(Round Rect)
-Db --> D{Rhombus}
-shorten --> D
+req((req)) --> exists{exists}
+exists -- yes --> response((response))
+exists -- no --> shorten[shorten] --> db((db))  
 ```
 
 ## Routes:
