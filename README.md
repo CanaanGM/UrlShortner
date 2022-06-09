@@ -16,6 +16,12 @@ source venv/bin/activate
 ```
 uvicorn UrlShortner.main:app --port 8976 --reload
 ```
+- create .env file which look like this:
+```
+ENV_NAME="Development"
+DB_URL="sqlite:///./shortener.db"
+```
+--- 
 
 ```mermaid
 graph LR
