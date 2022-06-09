@@ -2,6 +2,23 @@
 
 ##  meant as a learning exercise
 
+
+### to run:
+- clone then cd into it
+- activate the virtual env:
+```
+win \n
+venv\scripts\activate
+\n
+unix \n
+source venv/bin/activate
+```
+- then run : 
+```
+uvicorn UrlShortner.main:app --port <port> --reload
+uvicorn UrlShortner.main:app --port 8976 --reload
+```
+
 ```mermaid
 graph LR
 req((req)) --> exists{exists}
