@@ -7,15 +7,13 @@
 - clone then cd into it
 - activate the virtual env:
 ```
-win \n
+win
 venv\scripts\activate
-\n
-unix \n
+unix
 source venv/bin/activate
 ```
-- then run : 
+- then run (choose an open port): 
 ```
-uvicorn UrlShortner.main:app --port <port> --reload
 uvicorn UrlShortner.main:app --port 8976 --reload
 ```
 
